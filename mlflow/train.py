@@ -1,25 +1,31 @@
+import os
+import itertools
+from pathlib import Path
+
 import mlflow
 import mlflow.sklearn
+import numpy as np
 from sklearn.datasets import load_iris
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
 from sklearn.linear_model import LogisticRegression
 from sklearn.svm import SVC
 from sklearn.metrics import accuracy_score, f1_score
-import numpy as np
-import os
-import itertools
+
+BASE_DIR = Path(__file__).resolve().parent
+MLRUNS_DIR = BASE_DIR / "mlruns"
+MLRUNS_DIR.mkdir(parents=True, exist_ok=True)
+
+mlflow.set_tracking_uri(MLRUNS_DIR.as_uri())
 
 
-def run_experiment(experiment_name):
+def run_experiment(experiment_name: str) -> None:
     mlflow.set_experiment(experiment_name)
 
-    # ---- Dataset ----
     data = load_iris()
     X = data.data
     y = data.target
 
-    # ---- Models & Hyperparameters ----
     model_space = {
         "RandomForest": {
             "n_estimators": [50, 100, 150],
@@ -44,11 +50,8 @@ def run_experiment(experiment_name):
 
     test_sizes = [0.2, 0.3]
 
-    # ---- Loop through all model families ----
     for model_name, hyperparams in model_space.items():
-
-        # Create all combinations of hyperparameters
-        keys = hyperparams.keys()
+        keys = list(hyperparams.keys())
         combinations = list(itertools.product(*hyperparams.values()))
 
         for combo in combinations:
@@ -64,7 +67,6 @@ def run_experiment(experiment_name):
                 )
 
                 with mlflow.start_run():
-                    # ---- Instantiate model based on name ----
                     if model_name == "RandomForest":
                         model = RandomForestClassifier(**params)
                     elif model_name == "GradientBoosting":
@@ -76,31 +78,31 @@ def run_experiment(experiment_name):
                     else:
                         continue
 
-                    # ---- Train ----
                     model.fit(X_train, y_train)
                     y_pred = model.predict(X_test)
 
-                    # ---- Metrics ----
                     accuracy = accuracy_score(y_test, y_pred)
                     f1 = f1_score(y_test, y_pred, average="weighted")
 
-                    # ---- Log params ----
                     mlflow.log_param("model_name", model_name)
                     mlflow.log_param("test_size", test_size)
                     for k, v in params.items():
                         mlflow.log_param(k, v)
 
-                    # ---- Log metrics ----
                     mlflow.log_metric("accuracy", accuracy)
                     mlflow.log_metric("f1_weighted", f1)
 
-                    # ---- Log model ----
-                    mlflow.sklearn.log_model(model, "model")
+                    mlflow.sklearn.log_model(model, artifact_path="model")
 
-                    print(f"Logged model: {model_name} | params={params} | test_size={test_size} | acc={accuracy:.4f}")
+                    print(
+                        f"Logged model: {model_name} | "
+                        f"params={params} | "
+                        f"test_size={test_size} | "
+                        f"acc={accuracy:.4f}"
+                    )
 
 
-def main():
+def main() -> None:
     experiment_name = os.getenv("MLFLOW_EXPERIMENT_NAME", "iris-ml-models")
     run_experiment(experiment_name)
 
