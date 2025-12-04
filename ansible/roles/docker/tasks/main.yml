@@ -1,0 +1,21 @@
+- name: Install Docker and dependencies
+  apt:
+    name:
+      - docker.io
+      - docker-compose
+    state: present
+  become: yes
+
+- name: Ensure Docker service is running
+  service:
+    name: docker
+    state: started
+    enabled: yes
+  become: yes
+
+- name: Add ubuntu user to docker group
+  user:
+    name: ubuntu
+    groups: docker
+    append: yes
+  become: yes

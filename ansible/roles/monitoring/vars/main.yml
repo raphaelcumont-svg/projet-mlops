@@ -1,0 +1,6 @@
+---
+monitoring_compose_path: "/opt/monitoring"
+prometheus_image: "prom/prometheus:latest"
+grafana_image: "grafana/grafana:latest"
+prometheus_port: 9090
+grafana_port: 3000

@@ -1,0 +1,30 @@
+- name: Create monitoring directory
+  file:
+    path: /opt/monitoring
+    state: directory
+  become: yes
+
+- name: Deploy prometheus.yml
+  template:
+    src: prometheus.yml.j2
+    dest: /opt/monitoring/prometheus.yml
+  become: yes
+
+- name: Deploy docker-compose.yml
+  template:
+    src: docker-compose.yml.j2
+    dest: /opt/monitoring/docker-compose.yml
+  become: yes
+
+- name: Stop existing monitoring stack if any
+  command: docker-compose down
+  args:
+    chdir: /opt/monitoring
+  ignore_errors: yes
+  become: yes
+
+- name: Start monitoring stack
+  command: docker-compose up -d
+  args:
+    chdir: /opt/monitoring
+  become: yes

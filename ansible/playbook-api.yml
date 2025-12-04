@@ -1,0 +1,6 @@
+- hosts: api
+  become: yes
+  roles:
+    - common
+    - docker
+    - api

@@ -1,0 +1,5 @@
+---
+api_image: "projet-mlops-api:latest"
+api_container_name: "ml-api"
+api_port: 5000
+api_compose_path: "/opt/api"

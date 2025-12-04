@@ -1,6 +1,0 @@
-Flask
-gunicorn 
-mlflow
-scikit-learn
-prometheus-client
-pandas

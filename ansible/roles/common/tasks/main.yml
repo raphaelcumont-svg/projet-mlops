@@ -1,0 +1,14 @@
+- name: Update APT cache
+  apt:
+    update_cache: yes
+  become: yes
+
+- name: Install base packages
+  apt:
+    name:
+      - ca-certificates
+      - curl
+      - git
+      - python3-pip
+    state: present
+  become: yes

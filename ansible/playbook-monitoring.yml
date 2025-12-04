@@ -1,0 +1,6 @@
+- hosts: monitoring
+  become: yes
+  roles:
+    - common
+    - docker
+    - monitoring

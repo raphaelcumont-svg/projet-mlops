@@ -1,0 +1,5 @@
+---
+- name: Restart API stack
+  ansible.builtin.command:
+    cmd: docker-compose up -d
+    chdir: "{{ api_compose_path }}"

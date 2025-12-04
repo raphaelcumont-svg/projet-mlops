@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  api:
+    image: "{{ api_image }}"
+    container_name: "{{ api_container_name }}"
+    restart: unless-stopped
+    ports:
+      - "{{ api_port }}:{{ api_port }}"
+    env_file:
+      - /opt/api/.env
+    networks:
+      - mlops
+
+networks:
+  mlops:
+    driver: bridge
