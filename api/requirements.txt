@@ -1,6 +1,6 @@
-Flask
-gunicorn 
+flask
+pandas
+prometheus_client
 mlflow
 scikit-learn
-prometheus-client
-pandas
+gunicorn
