@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Pablo/pythonProject/projet-mlops/mlflow/mlruns/595411341617376693/f7ae426b33174da6805a35d195a7d893/artifacts
+end_time: 1764850565620
+entry_point_name: ''
+experiment_id: '595411341617376693'
+lifecycle_stage: active
+run_id: f7ae426b33174da6805a35d195a7d893
+run_name: merciful-steed-597
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764850560545
+status: 3
+tags: []
+user_id: Pablo

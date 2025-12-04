@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Pablo/pythonProject/projet-mlops/mlflow/mlruns/595411341617376693/f2037df20ebc4c14bfa11accf247a008/artifacts
+end_time: 1764850631788
+entry_point_name: ''
+experiment_id: '595411341617376693'
+lifecycle_stage: active
+run_id: f2037df20ebc4c14bfa11accf247a008
+run_name: merciful-shrike-133
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764850626706
+status: 3
+tags: []
+user_id: Pablo

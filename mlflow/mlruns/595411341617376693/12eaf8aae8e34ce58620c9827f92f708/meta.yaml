@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Pablo/pythonProject/projet-mlops/mlflow/mlruns/595411341617376693/12eaf8aae8e34ce58620c9827f92f708/artifacts
+end_time: 1764850682057
+entry_point_name: ''
+experiment_id: '595411341617376693'
+lifecycle_stage: active
+run_id: 12eaf8aae8e34ce58620c9827f92f708
+run_name: adorable-roo-439
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764850676968
+status: 3
+tags: []
+user_id: Pablo

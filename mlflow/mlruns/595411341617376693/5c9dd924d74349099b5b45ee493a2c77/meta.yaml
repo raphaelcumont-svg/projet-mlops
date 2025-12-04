@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Pablo/pythonProject/projet-mlops/mlflow/mlruns/595411341617376693/5c9dd924d74349099b5b45ee493a2c77/artifacts
+end_time: 1764850732012
+entry_point_name: ''
+experiment_id: '595411341617376693'
+lifecycle_stage: active
+run_id: 5c9dd924d74349099b5b45ee493a2c77
+run_name: welcoming-kit-857
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764850727347
+status: 3
+tags: []
+user_id: Pablo

@@ -1,0 +1,10 @@
+artifact_location: file:///C:/Users/Pablo/pythonProject/projet-mlops/mlflow/mlruns/595411341617376693/models/m-e88ee60aef6144a4bc07f2b21610e3f2/artifacts
+creation_timestamp: 1764850707854
+experiment_id: '595411341617376693'
+last_updated_timestamp: 1764850712691
+model_id: m-e88ee60aef6144a4bc07f2b21610e3f2
+model_type: null
+name: model
+source_run_id: aefa8be69bbc4911b624f067ebc681f2
+status: 2
+status_message: null

@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Pablo/pythonProject/projet-mlops/mlflow/mlruns/595411341617376693/3f83361d8fcf4a989c1338759f63869b/artifacts
+end_time: 1764850646719
+entry_point_name: ''
+experiment_id: '595411341617376693'
+lifecycle_stage: active
+run_id: 3f83361d8fcf4a989c1338759f63869b
+run_name: adorable-bee-42
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764850641835
+status: 3
+tags: []
+user_id: Pablo

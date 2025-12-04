@@ -1,0 +1,6 @@
+artifact_location: file:///C:/Users/Pablo/pythonProject/projet-mlops/mlflow/mlruns/595411341617376693
+creation_time: 1764850536821
+experiment_id: '595411341617376693'
+last_update_time: 1764850536821
+lifecycle_stage: active
+name: iris-ml-models

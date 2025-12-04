@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Pablo/pythonProject/projet-mlops/mlflow/mlruns/595411341617376693/c6aeb4edc7fc4eeebf6fad6a087e4169/artifacts
+end_time: 1764850785661
+entry_point_name: ''
+experiment_id: '595411341617376693'
+lifecycle_stage: active
+run_id: c6aeb4edc7fc4eeebf6fad6a087e4169
+run_name: enchanting-bat-357
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764850779518
+status: 3
+tags: []
+user_id: Pablo

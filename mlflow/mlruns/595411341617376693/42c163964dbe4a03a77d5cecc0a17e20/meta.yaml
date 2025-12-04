@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Pablo/pythonProject/projet-mlops/mlflow/mlruns/595411341617376693/42c163964dbe4a03a77d5cecc0a17e20/artifacts
+end_time: 1764850676939
+entry_point_name: ''
+experiment_id: '595411341617376693'
+lifecycle_stage: active
+run_id: 42c163964dbe4a03a77d5cecc0a17e20
+run_name: dapper-asp-100
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764850671667
+status: 3
+tags: []
+user_id: Pablo

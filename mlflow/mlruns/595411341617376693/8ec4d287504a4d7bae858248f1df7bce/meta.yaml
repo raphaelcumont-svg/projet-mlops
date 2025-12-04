@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Pablo/pythonProject/projet-mlops/mlflow/mlruns/595411341617376693/8ec4d287504a4d7bae858248f1df7bce/artifacts
+end_time: 1764850692162
+entry_point_name: ''
+experiment_id: '595411341617376693'
+lifecycle_stage: active
+run_id: 8ec4d287504a4d7bae858248f1df7bce
+run_name: defiant-sheep-748
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764850687154
+status: 3
+tags: []
+user_id: Pablo

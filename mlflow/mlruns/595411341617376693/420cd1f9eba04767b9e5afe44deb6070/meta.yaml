@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Pablo/pythonProject/projet-mlops/mlflow/mlruns/595411341617376693/420cd1f9eba04767b9e5afe44deb6070/artifacts
+end_time: 1764850590663
+entry_point_name: ''
+experiment_id: '595411341617376693'
+lifecycle_stage: active
+run_id: 420cd1f9eba04767b9e5afe44deb6070
+run_name: worried-skink-830
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764850585705
+status: 3
+tags: []
+user_id: Pablo

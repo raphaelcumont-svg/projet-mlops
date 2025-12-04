@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Pablo/pythonProject/projet-mlops/mlflow/mlruns/595411341617376693/6588dbdfd9524167a87082a1e1b65227/artifacts
+end_time: 1764850765340
+entry_point_name: ''
+experiment_id: '595411341617376693'
+lifecycle_stage: active
+run_id: 6588dbdfd9524167a87082a1e1b65227
+run_name: useful-rat-270
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764850760769
+status: 3
+tags: []
+user_id: Pablo
